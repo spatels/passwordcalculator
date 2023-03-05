@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stateless Password Manager</title>
+	<meta name="description" content="A minimal stateless passoword manager, built with love by caeio.">
+	<meta property="og:title" content="caeio, LLC">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://caeio.com">
+	<meta property="og:description" content="IT Services | Consulting | Digital Transformation">
+	  <link rel="icon" href="assets/images/icon-32x32.png">
+        <!--  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+         <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!--Semantics Ui -->
+	<link rel="stylesheet" href="css/semantic.css">
+    <!--Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/semantic.js"></script>
+	<!--javascripts for custom functions-->
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    	<!--header-->
+	<div class="ui vertical masthead center aligned container bottompad">
+		<div class="ui logo center aligned">
+            <img src="assets/images/logo.svg" alt="caeio">
+        </div>
+		<h1 class="ui header">
+            Password Manager
+          </h1>
+        <h4>Don't store passwords, Calculate them!</h4>
+    </div>
+    <!--application-->
+        <div class="ui centered aligned container" >
+        <div class="ui placeholder segment">
+            <div class="ui two column very relaxed stackable grid">
+              <div class="column">
+                <div class="ui form">
+                    <form id="form">
+                    <h4 class="ui dividing header">Site Profile</h4>
+                  <div class="field">
+                    <label>Site URL</label>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            https://
+                          </div>
+                      <input type="text" id="site" name="Site URL" placeholder="www.caeio.com">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>Site User</label>
+                    <div class="ui input">
+                      <input type="text" id="user" name="Site User" placeholder="username">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>Character Options</label>
+                  <div class="field">
+                    <div class="ui slider checkbox">
+                      <input type="checkbox"  id="lowercase" name="lowercase" tabindex="0" class="hidden" checked="">
+                      <label>Lowercase</label>
+                    </div>
+                    </div>
+                    <div class="field">
+                    <div class="ui slider checkbox">
+                        <input type="checkbox" id="uppercase" name="uppercase" tabindex="0" class="hidden" checked="">
+                        <label>Uppercase</label>
+                      </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui slider checkbox">
+                      <input type="checkbox" id="numbers" name="numbers" tabindex="0" class="hidden" checked="">
+                      <label>Numbers</label>
+                    </div>
+                    </div>
+                    <div class="field">
+                    <div class="ui slider checkbox">
+                        <input type="checkbox" id="symbols" name="symbols" tabindex="0" class="hidden" checked="">
+                        <label>Symbols</label>
+                      </div>
+                  </div>
+                  </div>
+                  <h4 class="ui dividing header">Master Password</h4>
+                  <div class="field">
+                    <div class="ui input">
+                      <input id="master_password" name="Master Password" type="password">
+                    </div>
+                  </div>
+                  <button type = "submit" class="ui blue submit button">Calculate Password</button>
+                    </form>
+                </div>
+              </div>
+              <div class="middle aligned column">
+                <div class="ui fluid large">
+                    <div id = "message"class="label largetext">
+                        We make it easy to use different passwords for different accounts!
+                      </div>
+                    <div id="site_password" class="ui transparent input center aligned largetext">
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="ui vertical divider">
+                🔐
+               </div> 
+            </div>
+          </div>
+          </div>
+          </div>
+          </body>
+          </html>
+

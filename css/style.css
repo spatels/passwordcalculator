@@ -1,0 +1,15 @@
+@import url("semantic.css");
+
+.ui.logo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 200px;
+    height: 100px;
+}
+.ui.bottompad {
+    padding-bottom: 20px;
+}
+
+.largetext {
+    font-size: 16px;
+  }
