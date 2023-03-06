@@ -1,4 +1,5 @@
-    function getBrowserSize(){
+//hide divider    
+function getBrowserSize(){
        var w, h;
 
          if(typeof window.innerWidth != 'undefined')
@@ -18,7 +19,7 @@
        return {'width':w, 'height': h};
 }
 
-if(parseInt(getBrowserSize().width) < 1026){
+if(parseInt(getBrowserSize().width) < 765){
  document.getElementById("divider").style.display = "none";
 }
 
