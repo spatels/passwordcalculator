@@ -130,6 +130,11 @@ function copy() {
   navigator.clipboard.writeText(copyText.value);
 
   // Alert the copied text
-  alert("Password copied");
+     $.toast({
+      class: 'info',
+      displayTime: 10,
+      showIcon: 'copy',
+      message: "Password copied"
+    })
 } 
 
