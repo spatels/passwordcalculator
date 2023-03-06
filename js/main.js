@@ -132,7 +132,7 @@ function copy() {
   // Alert the copied text
      $.toast({
       class: 'info',
-      displayTime: 500,
+      displayTime: 1000,
       showIcon: 'copy',
       message: "Password copied"
     })
