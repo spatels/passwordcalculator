@@ -17,7 +17,14 @@ function validateForm() {
     let name = document.forms["form"][element].name;
     let value = document.forms["form"][element].value;
     if (value == "") {
-      alert(`${name} must be filled out.`)
+      $.toast({
+        class: 'error',
+        displayTime: 0,
+        showIcon: 'exclamation triangle',
+        closeIcon: true,
+        message: `${name} must be filled out.`
+      })
+
     }
     else{
       textValidationPass = 1 
@@ -30,7 +37,13 @@ function validateForm() {
     valueArray.push(document.forms["form"][element].checked)
   })
   if (valueArray.every( (val, i, arr) => val === arr[0] && val === false)){
-    alert("Atleast one character option needs to selected.")
+    $.toast({
+      class: 'error',
+      displayTime: 0,
+      showIcon: 'exclamation triangle',
+      closeIcon: true,
+      message: "Atleast one character option needs to selected."
+    })
   }
   else{
     checkBoxValidationPass = 1
