@@ -75,7 +75,8 @@ fetch('https://passwordcalculator.pythonanywhere.com/generate', {
    <button id="1" class="ui button" onclick=showhide() ><i class="eye icon" ></i></button>
    <button class="ui button" onclick=copy()><i class="copy icon"></i></button>
  </div>`)
-   .then(response => document.getElementById("message").innerHTML = "Here's your Password")
+   .then(response => document.getElementById("message").innerHTML = `Your Password for ${payload["site_profile"]["site"]}`)
+   .then(response =>document.getElementById("form").reset())
 
 }
 
