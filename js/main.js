@@ -19,9 +19,9 @@ function getBrowserSize(){
        return {'width':w, 'height': h};
 }
 
-if(parseInt(getBrowserSize().width) < 765){
+/* if(parseInt(getBrowserSize().width) < 765){
  document.getElementById("divider").style.display = "none";
-}
+} */
 
 // toggle
 $(document).ready(function () {
